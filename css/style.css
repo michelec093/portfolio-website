@@ -24,8 +24,9 @@ header {
 }
 
 nav>ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type:none;
+  padding: 60;
+  padding-top: 85px;
 }
 
 nav>ul>li {
@@ -98,10 +99,13 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #595a5b;
+  text-align: left;
 }
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -161,12 +165,29 @@ a:active {
 }
 
 .row {
-  text-align: center;
+  text-align: left;
   /* Centers text */
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 #work .row {
   text-align: center;
   /* Centers text */
@@ -188,6 +209,9 @@ a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+#hero span {
+  display: block;
 }
 
 #skills {
@@ -218,3 +242,73 @@ ul {
   list-style-type: none;
   padding: 0 15px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 0 13px;
+  }
+  .col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+#about h3 { margin-top: 0;}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 0 13px;
+  }
+  .col-md-6 {
+  width: 60%;
+  }
+  .col-lg-7 {
+  width: 40%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  #about h3 { margin-top: 0;}
+}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
