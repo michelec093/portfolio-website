@@ -21,12 +21,11 @@ header {
 
 .logo {
   max-width: 250px;
+  display: inline-block;
 }
 
 nav>ul {
   list-style-type:none;
-  padding: 60;
-  padding-top: 85px;
 }
 
 nav>ul>li {
@@ -159,14 +158,12 @@ a:active {
 /* Layout styling */
 .container {
   text-align: center;
-  /* Centers text */
   max-width: 1200px;
   padding: 15px 15px;
 }
 
 .row {
   text-align: left;
-  /* Centers text */
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
@@ -251,22 +248,31 @@ Medium devices (640px and larger)
     text-align: left;
     font-size: 18px;
     padding: 20px 0 13px;
+    overflow: hidden;
+  }
+  header.container{
+    padding: 0 15px;
   }
   .col-md-6 {
   width: 50%;
+}
+.logo {
+  max-width: 150px;
+  float:left;
 }
 [class*="col-"] {
   float: left;
   padding: 10px
 }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
 }
-#about h3 { margin-top: 0;}
+#about h3 {
+  margin-top: 0;
+}
 
 @keyframes color-change {
   from {fill: #edc655;}
@@ -290,25 +296,15 @@ Large devices (1024px or larger)
     padding: 20px 0 13px;
   }
   .col-md-6 {
-  width: 60%;
+  width: 50%;
   }
   .col-lg-7 {
+  width: 60%;
+  }
+  .col-lg-5 {
   width: 40%;
   }
   [class*="col-"] {
   float: left;
   padding: 10px
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-  #about h3 { margin-top: 0;}
-}
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
