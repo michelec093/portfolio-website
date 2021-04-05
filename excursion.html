@@ -9,26 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/462ccf8f73.js" crossorigin="anonymous"></script>
 </head>
 
     <body>
 
       <header>
-  <div class="container">
-    <a href="index.html">
-      <img src="img/misc/homelogo-03.svg" alt="Michele Clemmens" class= "logo"/></a>
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html" class="logo"></a>
+            <img src="img/misc/homelogo-03.svg" alt="Michele Clemmens" />
 
-      <ul class="navigation">
-<nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="files/MicheleClemmensResume2021.pdf" target="_blank">Resume</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
-
-                    </ul>
-                </nav>
-        </header>
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="files/MicheleClemmensResume2021.pdf" target="_blank">Resume</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()""> <i class=" fas fa-bars"> </i> </a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
         <main>
             <div id="work">
                 <!--Work Section-->
