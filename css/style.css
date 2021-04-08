@@ -1,6 +1,6 @@
 /*
 Colors used:
-#BAD0C4 (Sage Green);
+#C2D5CB (Sage Green);
 #9FBCAB (Dark Sage Green)
 #9B9A9A (Light Grey);
 #595A5B (Medium Grey);
@@ -11,6 +11,8 @@ Colors used:
 }
 main {
   padding-top: 56px;
+  font-family: 'Roboto'; font-weight:300;
+
 }
 header {
   background-color: #fff5ea;
@@ -18,11 +20,14 @@ header {
   margin: 0 auto;
   box-shadow: 3px 3px 12px 0px rgba(50, 50, 50, 0.55);
   position: relative;
+  font-family: 'Roboto'; font-weight:300;
 }
 
 .logo {
   max-width: 250px;
   display: inline-block;
+  width:250px;
+  height:150px;
 }
 
 nav>ul {
@@ -55,7 +60,7 @@ nav>ul>li>a:active {
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #bad0c4;
+  color: #C2D5CB;
 }
 
 .navtoggle li:not(:last-child) {
@@ -140,7 +145,7 @@ img {
 }
 
 a {
-  color: #bad0c4;
+  color: #C2D5CB;
   text-decoration: none;
   /* No underlining */
 }
@@ -159,13 +164,13 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #bad0c4;
+  color: #C2D5CB;
 }
 
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #bad0c4;
+  background-color: #C2D5CB;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
@@ -184,7 +189,7 @@ a:active {
 
 .button:active {
   /* selected link */
-  color: #bad0c4;
+  color: #C2D5CB;
 }
 
 /* Layout styling */
@@ -272,6 +277,8 @@ a:active {
   padding: 0;
   display: inline-block;
   width: 100%;
+  font-family: 'Roboto'; font-weight:300;
+
 }
 
 ul {
@@ -289,6 +296,7 @@ ul {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
+
   header {
     text-align: left;
     font-size: 18px;
@@ -305,7 +313,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    
+
   }
 
   .nav {
@@ -336,7 +344,7 @@ Medium devices (640px and larger)
   }
 
   nav>ul {
-    margin: : 1em 0;
+    margin: 1em 0;
   }
 
   nav>ul>li {
@@ -381,6 +389,7 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
   @media only screen and (min-width: 1024px) {
+  }
     header {
       text-align: left;
       font-size: 18px;
